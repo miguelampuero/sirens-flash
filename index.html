@@ -279,7 +279,8 @@ const SONGS=[
   {id:'trophy',t:"A Trophy Father's Trophy Son",bpm:146,key:0},
   {id:'ending',t:'An Ending In Itself',bpm:120,key:1},
   {id:'roger-rabbit',t:'Roger Rabbit',bpm:164,key:-4},
-  {id:'with-ears',t:'With Ears To See And Eyes To Hear (Acoustic)',bpm:118,key:2}
+  {id:'with-ears',t:'With Ears To See And Eyes To Hear (Acoustic)',bpm:118,key:2},
+  {id:'parasites',t:'Parasites',bpm:150,key:-2}
 ];
 const DIFFS=[
   {id:'facil',n:'Fácil',lanes:3,travel:1.7,gap:.36,hold:.35},
@@ -330,7 +331,7 @@ function updateFileBox(){
     `Selecciona los MP3 una sola vez (puedes elegir todos juntos): quedan guardados en este navegador.`);
   $('file').value='';
 }
-const MATCH={'kick-me':['kickme'],'cant-hang':['canthang'],'do-it-now':['doitnow'],'leave-it':['leaveitall'],'better-off-dead':['betteroffdead'],'let-love':['letlovebleed'],'trophy':['trophy'],'ending':['endinginitself'],'roger-rabbit':['rogerrabbit'],'with-ears':['withears','earstosee']};
+const MATCH={'kick-me':['kickme'],'cant-hang':['canthang'],'do-it-now':['doitnow'],'leave-it':['leaveitall'],'better-off-dead':['betteroffdead'],'let-love':['letlovebleed'],'trophy':['trophy'],'ending':['endinginitself'],'roger-rabbit':['rogerrabbit'],'with-ears':['withears','earstosee'],'parasites':['parasites']};
 function matchSong(fname){
   const raw=fname.toLowerCase(),base=raw.replace(/\.[a-z0-9]+$/,''),nm=raw.replace(/[^a-z0-9]/g,'');
   const exact=SONGS.find(s=>base===s.id);if(exact)return exact;

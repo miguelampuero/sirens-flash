@@ -1,6 +1,6 @@
 import { getStore } from "@netlify/blobs";
 
-const SONGS = new Set(["kick-me","cant-hang","do-it-now","low","leave-it","better-off-dead","let-love","trophy","ending","roger-rabbit","with-ears"]);
+const SONGS = new Set(["kick-me","cant-hang","do-it-now","low","leave-it","better-off-dead","let-love","trophy","ending","roger-rabbit","with-ears","parasites"]);
 const DIFFS = new Set(["facil","normal","dificil"]);
 const json = (data, status = 200) => Response.json(data, { status, headers: { "cache-control": "no-store" } });
 
